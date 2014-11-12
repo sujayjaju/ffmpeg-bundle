@@ -1,3 +1,7 @@
+## 0.2.4
+
+- Author agnostic naming
+
 ## 0.2.3
 
 - Added thread_count parameter - by [micronax](https://github.com/micronax)
