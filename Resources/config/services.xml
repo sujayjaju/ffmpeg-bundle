@@ -5,25 +5,25 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="dubture_ffmpeg.ffmpeg.class">FFMpeg\FFMpeg</parameter>
-        <parameter key="dubture_ffmpeg.ffprobe.class">FFMpeg\FFProbe</parameter>
+        <parameter key="php_ffmpeg.ffmpeg.class">FFMpeg\FFMpeg</parameter>
+        <parameter key="php_ffmpeg.ffprobe.class">FFMpeg\FFProbe</parameter>
     </parameters>
 
     <services>
-        <service id="dubture_ffmpeg.ffmpeg" class="%dubture_ffmpeg.ffmpeg.class%" factory-class="%dubture_ffmpeg.ffmpeg.class%" factory-method="create" lazy="true">
+        <service id="php_ffmpeg.ffmpeg" class="%php_ffmpeg.ffmpeg.class%" factory-class="%php_ffmpeg.ffmpeg.class%" factory-method="create" lazy="true">
             <argument type="collection">
-                <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
-                <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
-                <argument key="timeout">%dubture_ffmpeg.binary_timeout%</argument>
-                <argument key="ffmpeg.threads">%dubture_ffmpeg.threads_count%</argument>
+                <argument key="ffmpeg.binaries">%php_ffmpeg.binary%</argument>
+                <argument key="ffprobe.binaries">%php_ffprobe.binary%</argument>
+                <argument key="timeout">%php_ffmpeg.binary_timeout%</argument>
+                <argument key="ffmpeg.threads">%php_ffmpeg.threads_count%</argument>
             </argument>
             <argument id="logger" type="service"/>
         </service>
 
-        <service id="dubture_ffmpeg.ffprobe" class="%dubture_ffmpeg.ffprobe.class%" factory-class="%dubture_ffmpeg.ffprobe.class%" factory-method="create" lazy="true">
+        <service id="php_ffmpeg.ffprobe" class="%php_ffmpeg.ffprobe.class%" factory-class="%php_ffmpeg.ffprobe.class%" factory-method="create" lazy="true">
             <argument type="collection">
-                <argument key="ffmpeg.binaries">%dubture_ffmpeg.binary%</argument>
-                <argument key="ffprobe.binaries">%dubture_ffprobe.binary%</argument>
+                <argument key="ffmpeg.binaries">%php_ffmpeg.binary%</argument>
+                <argument key="ffprobe.binaries">%php_ffprobe.binary%</argument>
             </argument>
             <argument id="logger" type="service"/>
         </service>
