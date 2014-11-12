@@ -1,6 +1,6 @@
 <?php
 
-namespace Dubture\FFmpegBundle\DependencyInjection;
+namespace sujayjaju\FFmpegBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('dubture_f_fmpeg');
+        $rootNode = $treeBuilder->root('php_ffmpeg');
 
         $rootNode
             ->children()
