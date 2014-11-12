@@ -1,6 +1,6 @@
 <?php
 
-namespace Dubture\FFmpegBundle\DependencyInjection;
+namespace sujayjaju\FFmpegBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class DubtureFFmpegExtension extends Extension
+class PhpFFmpegExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -25,9 +25,9 @@ class DubtureFFmpegExtension extends Extension
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
 
-        $container->setParameter('dubture_ffmpeg.binary', $config['ffmpeg_binary']);
-        $container->setParameter('dubture_ffprobe.binary', $config['ffprobe_binary']);
-        $container->setParameter('dubture_ffmpeg.binary_timeout', $config['binary_timeout']);
-        $container->setParameter('dubture_ffmpeg.threads_count', $config['threads_count']);
+        $container->setParameter('php_ffmpeg.binary', $config['ffmpeg_binary']);
+        $container->setParameter('php_ffprobe.binary', $config['ffprobe_binary']);
+        $container->setParameter('php_ffmpeg.binary_timeout', $config['binary_timeout']);
+        $container->setParameter('php_ffmpeg.threads_count', $config['threads_count']);
     }
 }
