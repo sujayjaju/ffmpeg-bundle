@@ -30,4 +30,8 @@ class PhpFFmpegExtension extends Extension
         $container->setParameter('php_ffmpeg.binary_timeout', $config['binary_timeout']);
         $container->setParameter('php_ffmpeg.threads_count', $config['threads_count']);
     }
+    public function getAlias()
+    {
+        return 'php_ffmpeg';
+    }
 }

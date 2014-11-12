@@ -1,4 +1,4 @@
-## 0.2.4
+## 0.5.3
 
 - Author agnostic naming
 
