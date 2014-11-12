@@ -1,7 +1,7 @@
 {
-    "name": "pulse00/ffmpeg-bundle",
-    "description": "Symfony bundle to provide PHP-FFmpeg as a Symfony service (https://github.com/alchemy-fr/PHP-FFmpeg)",
-    "keywords": ["ffmpeg", "multimedia"],
+    "name": "sujayjaju/ffmpeg-bundle",
+    "description": "Symfony bundle to provide PHP-FFmpeg (https://github.com/PHP-FFmpeg/PHP-FFmpeg) as a Symfony service",
+    "keywords": ["ffmpeg", "multimedia","php-ffmpeg"],
     "license": "MIT",
     "type": "symfony-bundle",
     "require": {
@@ -12,11 +12,15 @@
         {
             "name": "Robert Gruendler",
             "email": "r.gruendler@gmail.com"
+        },
+        {
+            "name": "Sujay Jaju",
+            "email": "sujay.jaju@gmail.com"
         }
     ],
     "autoload": {
-        "psr-0": { "Dubture\\FFmpegBundle": "" }
+        "psr-0": { "sujayjaju\\FFmpegBundle": "" }
     },
-    "target-dir": "Dubture/FFmpegBundle"
+    "target-dir": "sujayjaju/FFmpegBundle"
 
 }
