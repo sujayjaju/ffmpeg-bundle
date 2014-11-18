@@ -51,7 +51,7 @@ Using the service:
 	$video->save(new FMpeg\Format\Video\X264(), '/PATH/video.mp4');
 ```
 
-Sameple Integration With (1up-lab/OneupUploaderBundle)[https://github.com/1up-lab/OneupUploaderBundle]
+## Sameple Integration With (1up-lab/OneupUploaderBundle)[https://github.com/1up-lab/OneupUploaderBundle]
 
 Step 1: Create Your Upload Listener Class
 ``` php
