@@ -51,9 +51,12 @@ Using the service:
 	$video->save(new FMpeg\Format\Video\X264(), '/PATH/video.mp4');
 ```
 
-## Sameple Integration With (1up-lab/OneupUploaderBundle)[https://github.com/1up-lab/OneupUploaderBundle]
 
-Step 1: Create Your Upload Listener Class
+
+### Sample Integration With [1up-lab/OneupUploaderBundle](https://github.com/1up-lab/OneupUploaderBundle)
+
+* Step 1: Create Your Upload Listener Class
+
 ``` php
 namespace Application\YourBundle\EventListener;
 
@@ -116,7 +119,8 @@ class YourUploadListener
 }
 ```
 
-Step 2: Define your service
+* Step 2: Define your service
+
 ``` yaml
 
     application.your_upload_listener:
